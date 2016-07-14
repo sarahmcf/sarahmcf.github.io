@@ -1,23 +1,57 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel='stylesheet' type='text/css'>
+		<title>Sarah McFadden | Librarian</title>
+	<style>
+		body {
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-size: 20px;
+		text-align: center;
+		}
+		
+		header {
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-size: 60px;
+		color: black;
+		text-align: center;
+		background: rgba(255, 255, 255, 0.5);
+		padding: 20px 0 0 0;
+		}
+		
+		
+		
 
-<div class="home">
+		
+		.img-circle {
+			border-radius: 50%;
+			padding: 20px 0 0 0;
+			}
+			
+		
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+	</style>	
+		
+	</head>	
+	<body>
+	<header>
+	
+	Sarah McFadden | Librarian, Technologist
+	
+	</header>
+	
+	
+	<img class="img-circle" src= "glasses.jpg" />
+	
+	
+	<p>I am a librarian and digital literacy educator in Troy, NY. I came here to drink coffee and fix paper jams, and I am all out of coffee. 
+	</p>
+	
+	<div><a href="mcf_cv.html">CV</a>
+	<a href="https://github.com/sarahmcf">GitHub</a>
+	<a href="https://www.linkedin.com/in/sarah-mcfadden-3218544a">LinkedIn</a></div>
+	
+	</body>
+	
+	
+</html>	
